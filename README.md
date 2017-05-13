@@ -1,3 +1,9 @@
+[v0.0.2](https://github.com/littleflute/hz22/edit/master/README.md)
+
+
+![Image](mmexport1470622689670.jpg)
+
+
 ## Welcome to GitHub Pages
 
 You can use the [editor on GitHub](https://github.com/littleflute/hz22/edit/master/README.md) to maintain and preview the content for your website in Markdown files.
