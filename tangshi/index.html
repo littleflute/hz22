@@ -1,0 +1,51 @@
+<!DOCTYPE html>	  
+<html>  
+<body> 
+<script src="https://www.w3schools.com/lib/w3.js"></script>		
+<div id="id_div_mp4i_bat_info" > <a target="_blank" href="https://github.com/littleflute/bat/edit/master/bat/mp4index/mp4i.bat">v1.2. 54 * </a> </div>			 
+<div id="DivCurTime"></div> 
+<br>  
+<button onclick="play('v1.mp4')">1:v1.mp4</button> 
+<button onclick="play('v2.mp4')">2:v2.mp4</button> 
+<button onclick="play('v3.mp4')">3:v3.mp4</button> 
+<button onclick="play('v4.mp4')">4:v4.mp4</button> 
+<button onclick="play('v5.mp4')">5:v5.mp4</button> 
+<button onclick="play('v6.mp4')">6:v6.mp4</button> 
+<button onclick="play('v7.mp4')">7:v7.mp4</button> 
+<button onclick="play('v8.mp4')">8:v8.mp4</button> 
+<button onclick="play('v9.mp4')">9:v9.mp4</button> 
+<br> 	
+<div id="id_div_4_jpg" style="border:1px solid blue;" >				
+</div> 											
+<br> 
+<video id="myVideo" width="720" height="480" controls> 
+ <source src="0.mp4" type="video/mp4">  
+Your browser does not support HTML5 video. 
+</video>  
+<script>  
+var vid = document.getElementById("myVideo"); 
+function play(i) {
+    vid.src=i; 
+    vid.load();
+    vid.play(); 
+}
+function getCurTime() {  
+   document.getElementById("DivCurTime").innerHTML= vid.currentTime; 
+}   
+function setCurTime(t) { 
+   vid.currentTime=t;  
+   getCurTime();
+}  
+function moveMS(ms) { 
+  vid.currentTime+=ms;
+  getCurTime();  
+}   
+var _loadScript = function (id,src){					
+var	r = document.createElement("script");		
+r.id = id;				
+r.src = src; 				
+document.body.appendChild(r);		
+}					
+_loadScript ("id_script_plx","plx.js");				
+</script> 
+</body> 
