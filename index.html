@@ -87,7 +87,11 @@ function carousel() {
   <script>
     var _plx = bl$("id_btn_4_hz22_plx");
     _plx.onclick = function(){
-      alert(1);
+      function _loadIssue13 (o) { 
+                                   d.vIssue13.innerHTML = o.body;	
+             }
+      var url = "https://api.github.com/repos/littleflute/hz22/issues/13";
+      w3.getHttpObject(url, _loadIssue13 );
     }
   </script>
 </body>
